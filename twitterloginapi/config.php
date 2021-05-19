@@ -11,9 +11,9 @@ define('DB_NAME', 'techeuxon');
 define('DB_USER_TBL', 'users'); 
  
 // Twitter API configuration 
-define('TW_CONSUMER_KEY', 'HlhdIog84hMon9TwtLNR6YnvL'); 
-define('TW_CONSUMER_SECRET', 'Q4GUPXeWhaeDYsTfSHsKwqqyQsf7fFIuZZ9OekWC7ezugS5nCx'); 
-define('TW_REDIRECT_URL', 'http://localhost:82/vinnovate/techeuxon/twitterloginapi/twitter-oauth/'); 
+define('TW_CONSUMER_KEY', 'AnBnF267B3HWBa3oz5DUe3BKy'); 
+define('TW_CONSUMER_SECRET', 'BruqoGVChRTmRizMf33r4yPZ1sFojZedloFVYQElungNa2GLhI'); 
+define('TW_REDIRECT_URL', 'http://localhost:82/vinnovate/loginpoc/twitterloginapi/twitter-oauth/'); 
  
 // Start session 
 if(!session_id()){ 
