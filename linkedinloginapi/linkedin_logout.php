@@ -1,5 +1,5 @@
 <?php
-require_once 'config.php';
+require_once 'linkedin_config.php';
  
 try {
     if ($adapter->isConnected()) {
