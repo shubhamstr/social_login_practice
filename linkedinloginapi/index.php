@@ -17,7 +17,7 @@ try {
     $adapter->authenticate();
     $userProfile = $adapter->getUserProfile();
     print_r($userProfile);
-    echo '<a href="logout.php">Logout</a>';
+    echo '<a href="linkedin_logout.php">Logout</a>';
 
     echo '<br><img src="'.$userProfile ->photoURL.'" style="width:100px;" alt="">';
     echo '<br>Name :'.$userProfile ->firstName.' '.$userProfile ->lastName;
