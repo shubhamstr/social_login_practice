@@ -8,7 +8,7 @@
 | Blog: https://ahmadlogs.wordpress.com/
  */ 
  
-require_once 'config.php';
+require_once 'facebook_config.php';
 
 $permissions = ['email']; //optional
 
@@ -69,7 +69,7 @@ if (isset($accessToken))
 else 
 {	
 	// replace your website URL same as added in the developers.Facebook.com/apps e.g. if you used http instead of https and you used
-	$fb_login_url = $fb_helper->getLoginUrl('http://localhost:82/vinnovate/loginpoc/facebookloginapi/', $permissions);
+	$fb_login_url = $fb_helper->getLoginUrl('http://localhost:82/vinnovate/loginpoc/facebookloginapi/facebook_index.php/', $permissions);
 }
 ?>
 
@@ -94,36 +94,13 @@ else
 <body>
 
     <div class="page-header text-center">
-        <h1>Ahmad Logs - Login with Facebook</h1>
+        <h1>Login with Facebook</h1>
     </div>
 
     <!-- NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN -->
     <!--  If the user is login  -->
     <?php if(isset($_SESSION['fb_user_id'])): ?>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-        <a class="navbar-brand" href="<?php echo FB_BASE_URL; ?>">HOME</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="https://studio.youtube.com/channel/UCOXYfOHgu-C-UfGyDcu5sYw"><i
-                            class="fa fa-youtube"> YouTube Chennal</i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://www.facebook.com/ahmadlogs"><i
-                            class="fa fa-facebook">acebook</i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://github.com/ahmadlogs/"><i class="fa fa-github"> GitHub</i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="logout.php">Logout</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <a class="navbar-brand" href="<?php echo FB_BASE_URL; ?>">HOME</a>
 
     <div class="container" style="margin-top:30px">
         <div class="row">
@@ -148,6 +125,9 @@ else
                     <li class="nav-item">
                         <a class="nav-link">Email: <?php echo $_SESSION['fb_user_email']; ?></a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="facebook_logout.php">Logout</a>
+                    </li>
                 </ul>
 
             </div>
@@ -159,38 +139,12 @@ else
 
     <div class="login-form">
         <form action="" method="post">
-            <h2 class="text-center">Sign in</h2>
             <div class="text-center social-btn">
                 <a href="<?php echo $fb_login_url;?>" class="btn btn-primary btn-block"><i class="fa fa-facebook"></i>
                     Sign in with <b>Facebook</b></a>
             </div>
-            <div class="or-seperator"><i>or</i></div>
-            <div class="form-group">
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text"><span class="fa fa-user"></span></span>
-                    </div>
-                    <input type="text" class="form-control" name="username" placeholder="Username">
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text"><i class="fa fa-lock"></i></span>
-                    </div>
-                    <input type="password" class="form-control" name="password" placeholder="Password">
-                </div>
-            </div>
-            <div class="form-group">
-                <button type="submit" class="btn btn-success btn-block login-btn">Sign in</button>
-            </div>
-            <div class="clearfix">
-                <label class="float-left form-check-label"><input type="checkbox"> Remember me</label>
-                <a href="#" class="float-right text-success">Forgot Password?</a>
-            </div>
 
         </form>
-        <div class="hint-text">Don't have an account? <a href="#" class="text-success">Register Now!</a></div>
     </div>
     <?php endif ?>
     <!-- NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN -->

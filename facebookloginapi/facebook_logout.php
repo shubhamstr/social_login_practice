@@ -8,7 +8,7 @@
 | Blog: https://ahmadlogs.wordpress.com/
  */ 
 
-require_once 'config.php';
+require_once 'facebook_config.php';
 
 unset($_SESSION['facebook_access_token']);
 
@@ -19,5 +19,5 @@ unset($_SESSION['fb_user_email']);
 unset($_SESSION['fb_user_pic']);
 
 
-header("Location:index.php");
+header("Location:facebook_index.php");
 ?>
