@@ -14,7 +14,7 @@ require_once(__DIR__.'/Facebook/autoload.php');
 define('APP_ID', '1154462138327857');
 define('APP_SECRET', '1f6419380e6f62faf8fe0530fb16f0a0');
 define('API_VERSION', 'v2.5');
-define('FB_BASE_URL', 'http://localhost:82/vinnovate/loginpoc/facebookloginapi/facebook_index.php');
+define('FB_BASE_URL', 'http://localhost:82/vinnovate/loginpoc/facebookloginapi/');
 
 define(__DIR__,'/Facebook/autoload.php');
 

@@ -100,7 +100,6 @@ else
     <!-- NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN -->
     <!--  If the user is login  -->
     <?php if(isset($_SESSION['fb_user_id'])): ?>
-    <a class="navbar-brand" href="<?php echo FB_BASE_URL; ?>">HOME</a>
 
     <div class="container" style="margin-top:30px">
         <div class="row">
