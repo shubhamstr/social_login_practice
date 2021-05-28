@@ -3,7 +3,7 @@ require_once 'vendor/autoload.php';
   
 $config = [
     'callback' => 'http://localhost:82/vinnovate/loginpoc/twitterloginapi2/index.php',
-    'keys'     => ['key' => 'AnBnF267B3HWBa3oz5DUe3BKy', 'secret' => 'BruqoGVChRTmRizMf33r4yPZ1sFojZedloFVYQElungNa2GLhI'],
+    'keys'     => ['key' => 'EjS6ob6idavcn8tju5D74ao0E', 'secret' => 'L2wmkbV8wi3LPZwTCtfOqILhO7l8NwlK4MfCHG7lk7CcgtTLUq'],
     'authorize' => true
 ];
   
