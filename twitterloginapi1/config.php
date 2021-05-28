@@ -1,9 +1,9 @@
 <?php
 	// your app consumer key
-	define( 'CONSUMER_KEY', 'x4jztOZivPvjXPkcMKBXvm0PT' ); 
+	define( 'CONSUMER_KEY', 'L2SOyMzXwDcL5qLjEkKBQKoFW' ); 
 
 	// your app consumer secret
-	define( 'CONSUMER_SECRET', 'EsGkboRFRM3E93yGzbLO0Wny3xwqrALUULISZQNfysbSrPSJ3a' );
+	define( 'CONSUMER_SECRET', 'MesJFbJAG6rNBPPDEWRBf4g60TQBKVSjVdCb6mbamf6oUUHzfw' );
 
 	// your app callback url
-	define( 'OAUTH_CALLBACK', 'http://localhost:82/vinnovate/loginpoc/twitterloginapi3/index.php' );
+	define( 'OAUTH_CALLBACK', 'http://localhost:82/vinnovate/loginpoc/twitterloginapi1/index.php' );
